@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.main_container{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    background-color: var(--light_pink);
+    align-items: center;
+}
+.description{
+    margin: 0 0 1.2rem 0;
+    width: 95%;
+    height: 3rem;
+}
+.inp{
+    text-align: center;
+    margin: 0 5px;
+    padding: 7px 0;
+    width: 5.3rem;
+
+}
+.small_container{
+    text-align: center;
+    width: 100%;
+}
+.url_inp{
+    width: 95%;
+    height: 1.4rem;
+}
+
+.inp_container{
+    margin:1.2rem auto;
+}
+.inp_place{
+    height: 1.4rem;
+    width: 46%;
+    margin: 1.2rem 5px;
+}
+.img_preview{
+    width: 15rem;
+    margin:0 auto;
+    margin-bottom: 1.2rem;
+}
+.submit_btn{
+    height: 2.5rem;
+    width: 6rem;
+    border: none;
+    background-color: var(--mid_pink);
+    font-size: .85rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    transition:all .2s;
+    border: 2px solid var(--mid_pink);
+}
+.submit_btn:hover{
+    background-color: var(--dark_pink);
+    border: 2px solid var(--dark);
+    transform: translateY(-2px);
+}
+.submit_btn:active{
+    transform: translate(0);
+}
+@media only screen and (max-width : 995px){
+    .inp_place{
+        margin:8px 1px;
+    }
+    .main_container{
+        padding: 1.2rem 9px;
+    }
+}

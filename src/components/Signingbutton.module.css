@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.design{
+    border-radius: 68% 32% 79% 21% / 78% 68% 32% 22%  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262425;
+    text-decoration: none;
+    height: 7rem;
+    width: 7rem;
+    margin-left: 13rem;
+    background-color: #ffd5d5;
+    border: 2px solid #ffd5d5;
+    font-size: 1.1rem;
+    transition:all .2s;
+    cursor: pointer;
+}
+
+.verified_img{
+    width: 12rem;
+    margin-top: -3rem;
+    margin-left: 3rem;
+}
+.secure_img{
+    width: 9.5rem;
+}
+@media only screen and (max-width : 995px){
+    .secure_img{
+        width: 7rem;
+    }
+    .verified_img{
+        width: 9rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        margin-left: 0;
+    }
+    .secure_p{
+        font-size: 1rem;
+    }
+    .design{
+        margin-left: 10rem;
+    }
+}

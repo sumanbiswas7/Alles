@@ -1,0 +1,32 @@
+.container{
+    width: 10rem;
+    height: 10rem;
+    background-color: #ffd5d5;
+    margin-left: -9rem;
+    border-radius:67% 33% 71% 29% / 48% 54% 46% 52% ;
+    transition:all .4s ease-out;
+}
+.container:hover{
+    transform: scale(.8);
+}
+.container:hover .quote{
+    transform: scale(1.4);
+    text-shadow: 3px 0 9px #26242594;
+}
+.quote{
+    transition:all .4s ease-out;
+    font-weight: 200;
+    margin-top: -2rem;
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: 995px){
+  .container{
+      height: 0;
+      width: 0;
+  }
+  .quote{
+      height: 0;
+      width: 0;
+      font-size: 0;
+  }
+}

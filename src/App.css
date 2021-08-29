@@ -1,0 +1,19 @@
+/* Colors  #ffd5d5 #fff9f9 #ffb1b1 #ff8f8f #262425  */
+:root {
+    --light_pink: #ffd5d5;
+    --mid_pink:#ffb1b1;
+    --dark_pink:#ff8f8f;
+    --light: #ffffff;
+    --dark:#262425
+  }
+
+@font-face {
+    font-family: TW_C;
+    src: url(./fonts/TCM_____.TTF);
+}
+*{
+font-family: TW_C;
+}
+*::selection{
+    background-color: #ffd5d5;
+}

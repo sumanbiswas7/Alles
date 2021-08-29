@@ -1,0 +1,51 @@
+
+.alles_logo{
+    text-align: center;
+    font-size: 4rem;
+}
+@media only screen and (max-width: 995px){
+    .alles_logo{
+        font-size: 3rem;
+        margin-top: 1rem ;
+        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .btn_center{
+        margin-top: 2rem;
+    }
+}
+.login_btn{
+    width: 4rem;
+    height: 2.2rem;
+    margin-right: 8px;    
+    background-color: #ffd5d5;
+    border: none;
+    transition:all .2s;
+    cursor: pointer;
+}
+.signup_btn{
+    width: 4rem;
+    height: 2.2rem;
+    background-color: #ffd5d5;
+    border: none;
+    transition:all .2s;
+    cursor: pointer;
+}
+.signup_btn:hover{
+    background-color: #ffb1b1;
+}
+.login_btn:hover{
+    background-color: #ffb1b1;
+}
+.signup_btn:active{
+    transform: scale(.7);
+}
+.login_btn:active{
+    transform: scale(.7);
+    
+}
+
+.btn_center{
+    text-align: center;
+
+}
