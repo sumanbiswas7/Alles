@@ -67,12 +67,15 @@ p{
 }
 @media only screen and (max-width : 995px){
     .section{
-        margin: 2rem 2rem;
+        margin: 2rem 0;
     }
     .icon_container{
         display: flex;
         justify-content: center;
         margin-top: 8rem;
+    }
+    .socialmedia_container{
+        margin: -7rem 2px ;
     }
 
     .socialmedia_container:active{
