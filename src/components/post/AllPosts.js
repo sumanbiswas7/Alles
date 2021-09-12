@@ -1,6 +1,8 @@
 import PostList from "./PostList";
 import { useState } from "react";
 import {useEffect} from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
+import alpost from './AllPosts.module.css'
 
 
 export default function AllPosts(){
@@ -22,14 +24,18 @@ useEffect(()=>{
             POSTS.push(POST);
         }
         SetUserPosts(POSTS.reverse());
-        setIsLoading(false);
+        setTimeout(
+            () => setIsLoading(false), 
+            1500
+          );
         
     })
 },[]);
 if ((isLoading)) {
     return(
-        <div>
-            <h2 style={{textAlign: "center",marginTop:'2rem'}}>Loading...</h2>
+        <div className={alpost.container}>
+            <ClipLoader color={'#262425'} size={40}/>
+            {/* <h2 style={{textAlign: "center",marginTop:'2rem'}}>Loading...</h2> */}
         </div>
     );
 }
