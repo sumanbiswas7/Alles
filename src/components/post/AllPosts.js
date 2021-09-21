@@ -26,7 +26,7 @@ useEffect(()=>{
         SetUserPosts(POSTS.reverse());
         setTimeout(
             () => setIsLoading(false), 
-            1500
+            500
           );
         
     })

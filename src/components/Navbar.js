@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch, NavLink } from "react-router-dom";
 import About from "../pages/AboutPage";
 import Home from "../pages/HomePage";
 import Share from "../pages/SharePage";
@@ -14,16 +14,16 @@ export default function Navbar() {
             <nav>
                 <ul className={nav.container}>
                     <li className={nav.list}>
-                        <Link to="/" className={nav.Link}>Home</Link>
+                        <NavLink exact activeClassName={nav.activePageLink} to="/" className={nav.Link}>Home</NavLink>
                     </li>
                     <li className={nav.list}>
-                        <Link to="/share" className={nav.Link}>Add Post</Link>
+                        <NavLink activeClassName={nav.activePageLink} to="/share" className={nav.Link}>Add Post</NavLink>
                     </li>
                     <li className={nav.list}>
-                        <Link to="/about" className={nav.Link}>About</Link>
+                        <NavLink activeClassName={nav.activePageLink} to="/about" className={nav.Link}>About</NavLink>
                     </li>
                     <li className={nav.list}>
-                        <Link to="/signin" className={nav.Link}>Sign In</Link>
+                        <NavLink activeClassName={nav.activePageLink} to="/signin" className={nav.Link}>Sign In</NavLink>
                     </li>
                 </ul>
             </nav>
