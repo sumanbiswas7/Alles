@@ -1,7 +1,7 @@
 import PostList from "./PostList";
 import { useState } from "react";
 import {useEffect} from 'react';
-import ClipLoader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 import alpost from './AllPosts.module.css'
 
 
@@ -26,7 +26,7 @@ useEffect(()=>{
         SetUserPosts(POSTS.reverse());
         setTimeout(
             () => setIsLoading(false), 
-            500
+            800
           );
         
     })
@@ -34,7 +34,7 @@ useEffect(()=>{
 if ((isLoading)) {
     return(
         <div className={alpost.container}>
-            <ClipLoader color={'#262425'} size={40}/>
+            <FadeLoader speedMultiplier={3} color={'#262425'} size={40}/>
             {/* <h2 style={{textAlign: "center",marginTop:'2rem'}}>Loading...</h2> */}
         </div>
     );

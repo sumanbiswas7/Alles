@@ -25,9 +25,11 @@
   text-decoration: none;
   transition: .2s all;
 }
-.Link:hover {
-  background-color: #ffd5d5;
+.Link:active {
   border-bottom: 3px solid #262425;
+}
+.Link:hover {
+  color: #ffd5d5;
 }
 .activePageLink {
   border-bottom: 3px solid #ffd5d5;
